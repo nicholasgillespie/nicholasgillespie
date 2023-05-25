@@ -210,6 +210,7 @@ body[data-slideout="active"] {
 
 .b-duotone {
   position: relative;
+  cursor: pointer;
 }
 .b-duotone::before,
 .b-duotone::after {
@@ -441,6 +442,7 @@ body[data-slideout="active"] {
   padding: 0;
   background-color: transparent;
   inline-size: 62%;
+  cursor: pointer;
 }
 
 #controller-input::-webkit-slider-runnable-track {
