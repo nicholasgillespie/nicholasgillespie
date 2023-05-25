@@ -6,9 +6,6 @@
 .u-mb-1rem {
   margin-block-end: 1rem;
 }
-.u-mb-gutter {
-  margin-block-end: var(--gutter);
-}
 .u-mb-space-l {
   margin-block-end: var(--space-l);
 }

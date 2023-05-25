@@ -1,53 +1,4 @@
 /* ANIMATIONS //////////////////// */
-/* Define the CSS classes for animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 1s ease forwards;
-}
-
-.slide-down {
-  transform: translateY(-100%);
-  opacity: 0;
-  animation: slideDownAnimation var(--transition-linear) forwards;
-}
-
-.slide-up {
-  transform: translateY(100%);
-  opacity: 0;
-  animation: slideUpAnimation 1s ease forwards;
-}
-
-/* Define the CSS keyframes for the animations */
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDownAnimation {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideUpAnimation {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
 /* HEADER //////////////////// */
 /* Header Position */
@@ -235,7 +186,6 @@ body[data-slideout="active"] {
 
 .b-hero h3 {
   font-size: var(--step-4);
-  /* margin-block-start: 0em; */
   --flow-space: 0.175em;
 }
 
@@ -368,24 +318,12 @@ body[data-slideout="active"] {
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-5-min)) *
       var(--fluid-bp)
   );
-  --space-s: calc(
-    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) *
-      var(--fluid-bp)
-  );
-  --space-m: calc(
-    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) *
-      var(--fluid-bp)
-  );
   --space-xs-s: calc(
     ((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) *
       var(--fluid-bp)
   );
   --space-s-m: calc(
     ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) *
-      var(--fluid-bp)
-  );
-  --space-m-l: calc(
-    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) *
       var(--fluid-bp)
   );
   --space-s-l: calc(
