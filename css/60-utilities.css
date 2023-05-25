@@ -1,0 +1,68 @@
+/* SPACING */
+.u-flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.u-mb-1rem {
+  margin-block-end: 1rem;
+}
+.u-mb-gutter {
+  margin-block-end: var(--gutter);
+}
+.u-mb-space-l {
+  margin-block-end: var(--space-l);
+}
+
+/* TEXT ALIGNMENT */
+.u-text-align {
+  text-align: var(--text-align, center);
+}
+.u-text-align > * {
+  margin-inline: auto;
+}
+
+/* STRUCTURAL */
+.u-box {
+  --box-bg: white;
+  --box-text: black;
+  padding: var(--box-padding, var(--gutter));
+  color: var(--box-color-text, var(--box-text));
+  background-color: var(--box-color-bg, var(--box-bg));
+  box-shadow: inset 0 0 0 4px var(--box-color-text, var(--box-text));
+}
+.u-box * {
+  color: inherit;
+}
+.u-box[data-box="invert"] {
+  color: var(--box-color-bg, var(--box-bg));
+  background-color: var(--box-color-text, var(--box-text));
+}
+
+.u-line {
+  inline-size: var(--space-l-3xl); /* length of line */
+  block-size: var(--border-width);
+  background-color: var(--color-text-glare);
+}
+
+.u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  block-size: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  inline-size: 1px;
+  white-space: nowrap;
+}
+
+/* TYPOGRAPHY */
+.u-title-mono {
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+
+.u-clr-text-glare {
+  color: var(--color-text-glare);
+}

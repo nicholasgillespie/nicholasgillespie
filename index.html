@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer | Nicholas Gillespie</title>
+    <meta
+      name="description"
+      content="Nicholas Gillespie is a fullstack web developer based in Australia. He builds inclusive digital experiences with scalable design systems, progressive enhancement, fluid type and space, and flexible layouts to ensure optimal design for any screen size or condition."
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header" data-header="active">
+      <div class="skip-link-container">
+        <a href="#content" class="skip-link">Skip to Content</a>
+      </div>
+      <nav
+        class="[ c-wrapper c-region c-cluster ]"
+        data-wrapper="full-width"
+        data-region="space-2xs-xs"
+        data-cluster="space-between"
+      >
+        <a href="#content" id="logo" class="logo">
+          <svg
+            width="260"
+            height="300"
+            viewBox="0 0 260 300"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M260 75L130 0L0 75V150V225L130 300L188.5 266.25L159.25 249.375L130 266.25L29.25 208.125V91.875L130 33.75L230.75 91.875V174.375L130 116.25L100.75 133.125V193.125L130 210V150L260 225V150V75Z"
+            />
+          </svg>
+        </a>
+        <ul role="list" class="c-cluster">
+          <li><a href="#about">About</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#result">Result</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <a class="button" data-button="small" href="./resume.pdf">Resume</a>
+        </ul>
+        <button id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <aside>
+        <div id="slideout">
+          <nav>
+            <ul role="list" class="c-cluster">
+              <li><a href="#about">About</a></li>
+              <li><a href="#approach">Approach</a></li>
+              <li><a href="#result">Result</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <a class="button" href="./resume.pdf">Resume</a>
+            </ul>
+          </nav>
+        </div>
+        <div id="overlay"></div>
+      </aside>
+    </header>
+
+    <main id="content">
+      <section
+        id="hero"
+        class="[ c-cover c-wrapper ][ b-hero ]"
+        data-wrapper="large"
+        aria-label="Introduction to Nicholas Gillespie, a fullstack web developer"
+      >
+        <div class="u-flow">
+          <h1 class="u-title-mono">Hi, my name is</h1>
+          <h2 class="u-clr-text-glare">Nicholas Gillespie.</h2>
+          <h3>I'm a Fullstack Web Developer.</h3>
+          <p>
+            I build inclusive digital experiences with scalable design systems,
+            progressive enhancement, fluid type and space, and flexible layouts
+            to ensure
+            <span>optimal design for any screen size or condition</span>.
+          </p>
+          <a class="button" href="#about">About Me</a>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="[ c-wrapper c-region ][ b-about ]"
+        data-wrapper="medium"
+        data-region="space-l-2xl"
+        aria-label="About Me"
+      >
+        <h2 class="u-mb-1rem">About Me</h2>
+        <div class="c-grid" data-grid="3-2">
+          <div class="u-flow">
+            <p>
+              Hi! I'm Nicholas Gillespie, a former Royal Marines Commando turned
+              web developer. My interest in web development began in 2014 while
+              building websites with WordPress for personal projects.
+            </p>
+            <p>
+              Fast-forward to today, I have gained a proficient skill set in
+              both
+              <span
+                >front-end and back-end technologies with a specialization in
+                JavaScript & CSS</span
+              >. My main focus these days is on developing fully responsive
+              digital applications and experiences that are accessible and
+              inclusive to all website users.
+            </p>
+            <p>Some of the key components of my tech stack include:</p>
+            <div class="c-cluster">
+              <ul role="list" class="u-flow">
+                <li>JavaScript (ES6+)</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>RESTful API</li>
+              </ul>
+              <ul role="list" class="u-flow">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>CUBE CSS</li>
+                <li>Fluid type & Space</li>
+                <li>Flexible Layouts</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="b-duotone">
+              <img
+                src="./img/web_developer_nicholas_gillespie.jpg"
+                alt="Profile picture of Nicholas Gillespie."
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="approach"
+        class="[ c-wrapper c-region ][ u-flow u-text-align ][ b-approach ]"
+        data-wrapper="medium"
+        data-region="space-l-2xl"
+        aria-label="My Approach"
+      >
+        <h2>My Approach</h2>
+        <p>
+          My approach to web development is guided by
+          <span>progressive enhancement</span>, starting with the most basic
+          technological solutions and enhancing them where possible based on
+          factors such as device & network performance, and user needs.
+        </p>
+        <p>
+          With experience in scalable<span> design systems</span>, I place a
+          strong emphasis on creating <span>flexible layouts</span> and
+          <span>fluid typography</span> that seamlessly
+          <span>adapt to all screen sizes</span>, ensuring that my websites are
+          accessible, inclusive and responsive across devices.
+        </p>
+      </section>
+
+      <section
+        class="[ c-region ][ b-result ]"
+        data-region="space-l-2xl"
+        aria-label="Result"
+      >
+        <div class="c-wrapper">
+          <h2 id="result" class="u-mb-space-l">Result</h2>
+        </div>
+
+        <figure id="demo-container" class="c-wrapper" data-wrapper="large">
+          <div id="presentation-container">
+            <div id="presentation-wrapper">
+              <div id="presentation-content">
+                <header class="c-region">
+                  <nav class="c-cluster" data-cluster="space-between">
+                    <span>logo</span>
+                    <ul role="list" class="c-cluster">
+                      <li>link</li>
+                      <li>link</li>
+                      <li>link</li>
+                    </ul>
+                  </nav>
+                </header>
+                <main>
+                  <section class="c-region">
+                    <h2>
+                      Flexible and Inclusive Designs for Responsive Experiences
+                    </h2>
+                    <h3>
+                      Combining flexible layouts, fluid typography, and CSS
+                      methodologies empowers designs to be responsive, scalable,
+                      visually engaging, and accessible. Flexible inclusion for
+                      seamless cross-device experiences.
+                    </h3>
+                  </section>
+                  <section class="c-grid">
+                    <div class="u-box u-flow" data-box="invert">
+                      <h4>Flexible Layouts</h4>
+                      <p>
+                        Flexible layouts ensure responsive designs for all
+                        devices
+                      </p>
+                    </div>
+                    <div class="u-box u-flow" data-box="invert">
+                      <h4>Fluid type & Space</h4>
+                      <p>
+                        Responsive type scales ensure consistent typography on
+                        devices
+                      </p>
+                    </div>
+                    <div class="u-box u-flow" data-box="invert">
+                      <h4>CSS Methodologies</h4>
+                      <p>
+                        Enhance CSS with flexible methods for portable designs
+                      </p>
+                    </div>
+                  </section>
+                </main>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </section>
+
+      <section
+        id="contact"
+        class="[ c-wrapper c-region ][ u-flow u-text-align ][ b-contact ]"
+        data-wrapper="medium"
+        data-region="space-l-2xl"
+        aria-label="Contact Me"
+      >
+        <h2 class="u-title-mono">What's Next?</h2>
+        <h2 class="u-clr-text-glare">Get In Touch</h2>
+        <p>
+          Whether you have a question, need a consultation, or want to discuss
+          your project ideas, I am readily available to assist. Feel free to
+          reach out, and together, we can transform your vision into reality.
+        </p>
+        <a
+          class="button"
+          href="mailto:contact@nicholasgillespie.com?subject=Website Enquiry"
+          >Say Hello</a
+        >
+      </section>
+    </main>
+
+    <footer
+      class="[ c-wrapper c-region c-cluster ][ u-text-align ]"
+      data-wrapper="full-width"
+      data-region="space-l-2xl"
+      data-cluster="space-between"
+    >
+      <div class="c-cluster">
+        <p>website developer</p>
+        <span class="logo">
+          <svg
+            width="260"
+            height="300"
+            viewBox="0 0 260 300"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M260 75L130 0L0 75V150V225L130 300L188.5 266.25L159.25 249.375L130 266.25L29.25 208.125V91.875L130 33.75L230.75 91.875V174.375L130 116.25L100.75 133.125V193.125L130 210V150L260 225V150V75Z"
+            />
+          </svg>
+        </span>
+        <p>nicholas gillespie</p>
+      </div>
+      <a class="button b-back-to-top" href="#content">Back to Top</a>
+
+      <aside>
+        <div class="[ c-cluster ][ b-fixed-element ]" data-fixed="left">
+          <div class="u-line"></div>
+          <ul role="list" class="c-cluster">
+            <li><a href="https://github.com/nicholasgillespie">GitHub</a></li>
+            <li><a href="https://twitter.com/nikogillespie">Twitter</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/gillespie-nicholas/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="[ c-cluster ][ b-fixed-element ]" data-fixed="right">
+          <a href="mailto:contact@nicholasgillespie.com?subject=Website Enquiry"
+            >contact@nicholasgillespie.com</a
+          >
+          <div class="u-line"></div>
+        </div>
+      </aside>
+    </footer>
+  </body>
+</html>

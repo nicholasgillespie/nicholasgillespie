@@ -1,0 +1,23 @@
+/* fluid calculator */
+:root {
+  --fluid-min-width: 320;
+  --fluid-max-width: 1040;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1040px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-min-width) * 1px);
+  }
+}

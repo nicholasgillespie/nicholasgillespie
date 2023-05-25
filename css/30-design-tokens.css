@@ -1,0 +1,46 @@
+:root {
+  /* SIZES & SPACINGS//////////////////// */
+  /* sizes */
+  --measure: 75ch;
+  --line-height: 1.4;
+  --line-height-s: 1.2;
+  --line-height-xs: 1.075;
+
+  /* spacings */
+  --gutter: 1rem;
+  --gutter: var(--space-s-m);
+
+  /* VARIABLES //////////////////// */
+  --border: var(--border-width) var(--border-style) var(--border-color);
+  --border-width: 2px;
+  --border-style: solid;
+  --border-color: var(--color-border);
+  --border-radius: 5px;
+
+  --transition-base: 250ms ease;
+  --transition-linear: 250ms linear;
+  --tracking-s: -0.075ch;
+  --tracking: -0.05ch;
+  --tracking-m: 0.005ch;
+  --tracking-l: 0.025ch;
+
+  /* COLORS //////////////////// */
+  --color-bg: #0a182e;
+  --color-text-dark: hsl(223, 20%, 34%);
+  --color-text: hsl(225, 20%, 61%);
+  --color-text-glare: hsl(226, 70%, 88%);
+  --color-text-selected-bg: #233453;
+  --color-primary: #66ffdb;
+  --color-border: var(--color-text);
+
+  /* FONTS - title, base, mono //////////////////// */
+  /* https://systemfontstack.com/ */
+  --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+}

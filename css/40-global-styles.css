@@ -1,0 +1,177 @@
+/* GLOBAL SETTINGS //////////////////// */
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-size: var(--step-0);
+  font-family: var(--font-sans-serif);
+  overflow-wrap: anywhere;
+  line-height: var(--line-height);
+  letter-spacing: var(--tracking);
+}
+
+/* DOCUMENT STRUCTURE //////////////////// */
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative;
+}
+
+/* TYPOGRAPHY //////////////////// */
+/* HEADINGS <h1><h6> */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-sans-serif);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--tracking-s);
+  hyphens: auto;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-5);
+  max-inline-size: 15ch;
+}
+
+h2 {
+  font-size: var(--step-3);
+  color: var(--color-text-glare);
+}
+
+h3 {
+  font-size: var(--step-2);
+}
+
+:is(h2, h3) {
+  max-inline-size: 30ch;
+}
+
+h4 {
+  font-size: var(--step-1);
+  max-inline-size: 45ch;
+}
+
+/* TEXT ELEMENTS */
+p,
+li,
+span {
+  font-size: var(--step-0);
+  max-inline-size: var(--measure);
+  text-wrap: balance;
+}
+
+p span {
+  color: var(--color-primary);
+}
+
+/* INTERACTIVE STATES //////////////////// */
+/* SELECTION */
+::selection {
+  color: var(--color-text-glare);
+  background: var(--color-text-selected-bg);
+  /* background: rgba(0, 0, 0, 0.99); */
+}
+
+/* INTERACTIVE ELEMENTS */
+:focus {
+  outline: var(--border-width) dashed var(--color-primary);
+  outline-offset: var(--space-2xs);
+}
+
+main:focus {
+  outline: none;
+}
+
+/* a element specifics */
+a {
+  color: var(--color-text-glare);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+a:where(:hover, :focus) {
+  color: var(--color-primary);
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid var(--color-text-glare);
+  color: var(--color-text-glare);
+  padding-block: calc(var(--space-xl) / 2 - var(--step--2));
+  padding-inline: var(--space-s);
+  --flow-space: var(--space-l);
+}
+.button:where(:hover, :focus) {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  outline: none;
+}
+.button[data-button="small"] {
+  padding-block: calc(var(--space-l-xl) / 2 - var(--step--2));
+  padding-inline: var(--space-xs-s);
+}
+
+/* Skip Link */
+.skip-link-container {
+  position: absolute;
+  inset-block-start: var(--space-2xs-xs);
+  inset-inline-start: var(--gutter);
+  z-index: 999;
+  block-size: var(--space-l-xl);
+}
+
+.skip-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-block-size: 100%;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  padding-inline: var(--space-2xs-xs);
+  outline: none;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* SCROLLBAR //////////////////// */
+/* width */
+::-webkit-scrollbar {
+  inline-size: 0.5rem;
+  inline-size: var(--space-3xs-2xs);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  --scrollbar-thumb: #495670;
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--border-radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-text);
+}
