@@ -1,6 +1,6 @@
 export default function demoHTML(min, max, val) {
   return `
-    <form class="[ b-controller ][ c-cluster ]" data-cluster="column-reverse">
+    <form class="[ c-cluster ][ b-controller ]" data-cluster="column-reverse">
       <div class="c-cluster" data-cluster="row">
         <label for="controller">Resize Viewport</label>
         <span>
