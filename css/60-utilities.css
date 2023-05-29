@@ -3,6 +3,9 @@
   margin-block-start: var(--flow-space, 1em);
 }
 
+.u-mt-1rem {
+  margin-block-start: 1em;
+}
 .u-mb-1rem {
   margin-block-end: 1rem;
 }

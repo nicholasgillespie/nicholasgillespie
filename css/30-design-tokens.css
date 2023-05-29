@@ -24,6 +24,8 @@
 
   /* COLORS //////////////////// */
   --color-bg: #0a182e;
+  --color-bg-active: #112240;
+  --color-bg-transparent: #0a182ecc;
   --color-text-dark: hsl(223, 20%, 34%);
   --color-text: hsl(225, 20%, 61%);
   --color-text-glare: hsl(226, 70%, 88%);
