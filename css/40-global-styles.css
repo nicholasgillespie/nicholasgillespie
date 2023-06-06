@@ -58,7 +58,7 @@ li,
 span {
   font-size: var(--step-0);
   max-inline-size: var(--measure);
-  text-wrap: balance;
+  /* text-wrap: balance; */
 }
 
 p span {
