@@ -6,10 +6,10 @@ Fast-forward to today, I have gained a proficient skill set in both front-end an
 
 Some of the key components of my tech stack include:
 
-| Back-end                                                   | Front-end                                                   |
-| ---------------------------------------------------------- | ----------------------------------------------------------- |
-| <span style="font-size: smaller;">JavaScript (ES6+)</span> | <span style="font-size: smaller;">HTML5</span>              |
-| <span style="font-size: smaller;">Node.js</span>           | <span style="font-size: smaller;">CSS3</span>               |
-| <span style="font-size: smaller;">Express</span>           | <span style="font-size: smaller;">CUBE CSS</span>           |
-| <span style="font-size: smaller;">MongoDB</span>           | <span style="font-size: smaller;">Fluid type & Space</span> |
-| <span style="font-size: smaller;">RESTful API</span>       | <span style="font-size: smaller;">Flexible Layouts</span>   |
+| Back-end          | Front-end          |
+| ----------------- | ------------------ |
+| JavaScript (ES6+) | HTML5              |
+| Node.js           | CSS3               |
+| Express           | CUBE CSS           |
+| MongoDB           | Fluid type & Space |
+| RESTful API       | Flexible Layouts   |
