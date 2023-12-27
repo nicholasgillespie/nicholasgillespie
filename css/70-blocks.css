@@ -63,7 +63,7 @@ header .logo svg {
   counter-reset: navigation;
 }
 
-:where(#header:first-of-type, #slideout) nav li::before {
+:where(#header:first-of-type, #slideout) nav li:nth-child(-n + 4)::before {
   content: counter(navigation, decimal-leading-zero) ". ";
   counter-increment: navigation;
   font-size: var(--step--1);
@@ -145,6 +145,7 @@ body[data-slideout="active"] {
   z-index: 2;
   display: grid;
   place-items: center;
+  justify-items: stretch;
   transition: var(--transition-base);
   background-color: var(--color-bg-active);
   padding: var(--gutter);
@@ -168,7 +169,13 @@ body[data-slideout="active"] {
   margin-inline-end: 0;
 }
 #slideout > nav .button {
-  margin-block-start: calc(var(--gutter) * 1);
+  margin-block: calc(var(--gutter) * 1);
+}
+#slideout nav ul > .c-cluster {
+  --cluster-flex-direction: row;
+  --cluster-justify-content: center;
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
 }
 
 #overlay {
