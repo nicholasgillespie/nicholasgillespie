@@ -172,7 +172,7 @@ body[data-slideout="active"] {
   margin-block: calc(var(--gutter) * 1);
 }
 #slideout nav ul > .c-cluster {
-  --cluster-flex-direction: row;
+  /* --cluster-flex-direction: row; */
   --cluster-justify-content: center;
   font-family: var(--font-mono);
   font-size: var(--step--2);
